@@ -39,7 +39,7 @@ This repository is prepared for a split deployment:
 - Deploy the API from `server/` to Render or a similar Node host.
 - Deploy the React app from `client/` to Vercel or Netlify.
 - Set `VITE_API_URL` in the frontend deployment to the public API URL.
-- Set `CLIENT_URL` in the backend deployment for CORS.
+- Set `CLIENT_URL` in the backend deployment to one or more comma-separated frontend origins if you want to lock CORS down further. Localhost and `*.vercel.app` origins are allowed automatically.
 
 ## API
 
